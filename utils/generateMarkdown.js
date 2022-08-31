@@ -1,33 +1,52 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  console.log(license, " badge");
+  const licenseBadge =
+    "Badges? We don't need no stinking " + license + " badges!!";
+  return licenseBadge;
 }
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   console.log(license, " link");
-  const link = "https://choosealicense.com/licenses/mit/";
-  console.log(link);
-  const licenseURL = link;
+  const licenseURL = "https://choosealicense.com/licenses/mit/";
   console.log(licenseURL);
   return licenseURL;
 }
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  const licenseText = `Copyright (c) 2022. All rights reserved.
+function renderLicenseSection(license, licenseURL, licenseBadge) {
+  const licenseText = `${licenseBadge} 
 
-  Licensed under the ${license} license`;
+  Licensed under the [${license}](${licenseURL}) license;
+  
+  Copyright © 2022. All rights reserved.`;
   //  console.log(licenseText);
   return licenseText;
 }
 
+function renderGithubLink(github) {
+  const githubLink = `[${github}](https://github.com/${github})`;
+  console.log(githubLink);
+  return githubLink;
+}
+
+function renderLinkedInLink(linkedIn) {
+  const linkedInLink = `[${linkedIn}](https://linkedin.com/in/${linkedIn})`;
+  console.log(linkedInLink);
+  return linkedInLink;
+}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   const licenseBadge = renderLicenseBadge(data.license);
   const licenseLink = renderLicenseLink(data.license);
-  const licenseSection = renderLicenseSection(data.license);
+  const licenseSection = renderLicenseSection(
+    data.license,
+    licenseLink,
+    licenseBadge
+  );
+  const githubLink = renderGithubLink(data.github);
+  const linkedInLink = renderLinkedInLink(data.linkedIn);
 
   const readMeText = `# ${data.title} 
   ## Description 
@@ -37,13 +56,13 @@ function generateMarkdown(data) {
   ## Usage 
   ${data.usage} 
   ## License 
-  ${licenseSection} ${licenseLink}
+  ${licenseSection}
   ## Contributors 
   ${data.contributing} 
   ## GitHub 
-  ${data.github} 
+  ${githubLink} 
   ## LinkedIn 
-  ${data.linkedin}`;
+  ${linkedInLink}`;
   return readMeText;
 }
 

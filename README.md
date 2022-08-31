@@ -1,17 +1,19 @@
-# aa 
+# Generate Readme 
   ## Description 
-  ss 
+  Create a professional README.md file based on user inputs. 
   ## Installation 
-  gg  
+  Clone this repository to a new folder on your computer.  
   ## Usage 
-  ee 
+  Type 'node index.js' and answer the prompts. 
   ## License 
-  Copyright (c) 2022. All rights reserved.
+  Badges? We don't need no stinking MIT badges!! 
 
-  Licensed under the bb license https://choosealicense.com/licenses/mit/
+  Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license;
+  
+  Copyright © 2022. All rights reserved.
   ## Contributors 
-  dd 
+  None 
   ## GitHub 
-  hh 
+  [bp4924](https://github.com/bp4924) 
   ## LinkedIn 
-  hh
+  [bernie-petters-8250421a](https://linkedin.com/in/bernie-petters-8250421a)
