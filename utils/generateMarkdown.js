@@ -9,7 +9,35 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   console.log(license, " link");
-  const licenseURL = "https://choosealicense.com/licenses/mit/";
+  let urlTag;
+
+  switch (license) {
+    case "MIT License":
+      urlTag = "mit";
+      break;
+    case "GNU AGPL":
+      urlTag = "agpl-3.0";
+      break;
+    case "GNU GPL":
+      urlTag = "gpl-3.0";
+      break;
+    case "GNU LGPL":
+      urlTag = "lgpl-3.0";
+      break;
+    case "Apache":
+      urlTag = "apache-2.0";
+      break;
+    case "Mozilla":
+      urlTag = "mpl-2.0";
+      break;
+    case "Boost":
+      urlTag = "bsl-1.0";
+      break;
+    case "Unlicense":
+      urlTag = "unlicense";
+  }
+
+  const licenseURL = `https://choosealicense.com/licenses/${urlTag}/`;
   console.log(licenseURL);
   return licenseURL;
 }

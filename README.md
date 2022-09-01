@@ -1,14 +1,14 @@
-# Generate Readme 
+# Readme Generator 
   ## Description 
-  Create a professional README.md file based on user inputs. 
+  Create a quality, professional README.md file based on user inputs. 
   ## Installation 
   Clone this repository to a new folder on your computer.  
   ## Usage 
-  Type 'node index.js' and answer the prompts. 
+  Type node install.js and follow the prompts. 
   ## License 
-  Badges? We don't need no stinking MIT badges!! 
+  Badges? We don't need no stinking Unlicense badges!! 
 
-  Licensed under the [MIT](https://choosealicense.com/licenses/mit/) license;
+  Licensed under the [Unlicense](https://choosealicense.com/licenses/unlicense/) license;
   
   Copyright © 2022. All rights reserved.
   ## Contributors 

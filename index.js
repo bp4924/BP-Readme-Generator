@@ -24,9 +24,19 @@ const questions = [
     message: "Usage:",
   },
   {
-    type: "input",
+    type: "list",
     name: "license",
-    message: "Choose license",
+    choices: [
+      "GNU AGPL",
+      "GNU GPL",
+      "GNU LGPL",
+      "Apache",
+      "Mozilla",
+      "MIT License",
+      "Boost",
+      "Unlicense",
+    ],
+    message: "Choose a license",
   },
   {
     type: "input",
