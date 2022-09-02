@@ -1,19 +1,24 @@
-# Readme Generator 
+# Generate Readme 
+  ---
   ## Description 
-  Create a quality, professional README.md file based on user inputs. 
+  Clone this repository to your computer. In the terminal, navigate to the new folder and type 'npm i' to create the node_modules folder containing the needed dependencies 
   ## Installation 
-  Clone this repository to a new folder on your computer.  
+    Type 'node index.js' in the terminal and respond to the prompts   
   ## Usage 
-  Type node install.js and follow the prompts. 
+   
   ## License 
-  Badges? We don't need no stinking Unlicense badges!! 
+  Badges? We don't need no stinking GNU LGPL badges!! 
 
-  Licensed under the [Unlicense](https://choosealicense.com/licenses/unlicense/) license;
+  Licensed under the [GNU LGPL](https://choosealicense.com/licenses/lgpl-3.0/) license;
   
   Copyright © 2022. All rights reserved.
-  ## Contributors 
-  None 
-  ## GitHub 
-  [bp4924](https://github.com/bp4924) 
-  ## LinkedIn 
-  [bernie-petters-8250421a](https://linkedin.com/in/bernie-petters-8250421a)
+  ## Contributing 
+  Submit suggested changes as a new branch on this repository for review 
+  
+  ## Questions 
+  - ### email 
+    [bp4924@gmail.com](https://bp4924@gmail.com) 
+  - ### GitHub 
+    [bp4924](https://github.com/bp4924)  
+  - ### LinkedIn 
+    [bernie-petters-8250421a](https://linkedin.com/in/bernie-petters-8250421a)

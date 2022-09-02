@@ -41,12 +41,17 @@ const questions = [
   {
     type: "input",
     name: "contributing",
-    message: "Contributors:",
+    message: "Contributung:",
   },
   {
     type: "input",
     name: "tests",
     message: "Tests:",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your email address",
   },
   {
     type: "input",

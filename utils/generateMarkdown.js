@@ -53,6 +53,12 @@ function renderLicenseSection(license, licenseURL, licenseBadge) {
   return licenseText;
 }
 
+function renderEmailLink(email) {
+  const emailLink = `[${email}](https://${email})`;
+  console.log(emailLink);
+  return emailLink;
+}
+
 function renderGithubLink(github) {
   const githubLink = `[${github}](https://github.com/${github})`;
   console.log(githubLink);
@@ -73,10 +79,12 @@ function generateMarkdown(data) {
     licenseLink,
     licenseBadge
   );
+  const emailLink = renderEmailLink(data.email);
   const githubLink = renderGithubLink(data.github);
   const linkedInLink = renderLinkedInLink(data.linkedIn);
 
   const readMeText = `# ${data.title} 
+  ---
   ## Description 
   ${data.discription} 
   ## Installation 
@@ -85,12 +93,16 @@ function generateMarkdown(data) {
   ${data.usage} 
   ## License 
   ${licenseSection}
-  ## Contributors 
+  ## Contributing 
   ${data.contributing} 
-  ## GitHub 
-  ${githubLink} 
-  ## LinkedIn 
-  ${linkedInLink}`;
+  
+  ## Questions 
+  - ### email 
+    ${emailLink} 
+  - ### GitHub 
+    ${githubLink}  
+  - ### LinkedIn 
+    ${linkedInLink}`;
   return readMeText;
 }
 
