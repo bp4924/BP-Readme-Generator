@@ -54,7 +54,7 @@ function renderLicenseSection(license, licenseURL, licenseBadge) {
 }
 
 function renderEmailLink(email) {
-  const emailLink = `[${email}](https://${email})`;
+  const emailLink = `<a href="mailTo: ${email}?subject=Hello!" alt="" >${email}</a>`;
   console.log(emailLink);
   return emailLink;
 }
@@ -93,6 +93,8 @@ function generateMarkdown(data) {
   ${data.usage} 
   ## License 
   ${licenseSection}
+  ## Tests 
+  ${data.tests}
   ## Contributing 
   ${data.contributing} 
   

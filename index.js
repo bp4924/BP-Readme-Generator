@@ -41,7 +41,7 @@ const questions = [
   {
     type: "input",
     name: "contributing",
-    message: "Contributung:",
+    message: "Contributing:",
   },
   {
     type: "input",
@@ -61,7 +61,7 @@ const questions = [
   {
     type: "input",
     name: "linkedIn",
-    message: "Enter your LinkedIn URL.",
+    message: "Enter your LinkedIn Username",
   },
 ];
 
