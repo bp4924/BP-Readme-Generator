@@ -24,14 +24,24 @@ const questions = [
     message: "Usage:",
   },
   {
-    type: "input",
+    type: "list",
     name: "license",
-    message: "Choose license",
+    choices: [
+      "GNU AGPL",
+      "GNU GPL",
+      "GNU LGPL",
+      "Apache",
+      "Mozilla",
+      "MIT License",
+      "Boost",
+      "Unlicense",
+    ],
+    message: "Choose a license",
   },
   {
     type: "input",
     name: "contributing",
-    message: "Contributors:",
+    message: "Contributing:",
   },
   {
     type: "input",
@@ -40,13 +50,18 @@ const questions = [
   },
   {
     type: "input",
+    name: "email",
+    message: "Enter your email address",
+  },
+  {
+    type: "input",
     name: "github",
     message: "Enter your GitHub Username",
   },
   {
     type: "input",
-    name: "linkedin",
-    message: "Enter your LinkedIn URL.",
+    name: "linkedIn",
+    message: "Enter your LinkedIn Username",
   },
 ];
 
