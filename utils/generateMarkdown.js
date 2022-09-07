@@ -141,7 +141,7 @@ function generateMarkdown(data) {
   - ### LinkedIn 
     ${linkedInLink}
 
-  ## Video link 
+  ## Demo Video  
   ${videoLink}`;
   return readMeText;
 }

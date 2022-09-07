@@ -1,4 +1,4 @@
-[![License: Mozilla}](https://img.shields.io/static/v1?label=License&message=Mozilla&color=yellow)](https://choosealicense.com/licenses/mpl-2.0/)
+[![License: GPLv3}](https://img.shields.io/static/v1?label=License&message=GPLv3&color=green)](https://choosealicense.com/licenses/gpl-3.0/)
   # Generate Readme            
   ---
   ## Table of Contents
@@ -18,7 +18,7 @@
       Type ‘node index.js’ in the terminal and respond to the prompts 
   ## License 
         
-  Licensed under the [Mozilla](https://choosealicense.com/licenses/mpl-2.0/) license;
+  Licensed under the [GNU GPL](https://choosealicense.com/licenses/gpl-3.0/) license;
   
   Copyright © 2022. All rights reserved.
   ## Tests 
@@ -34,5 +34,5 @@
   - ### LinkedIn 
     [berniepetters](https://linkedin.com/in/berniepetters)
 
-  ## Video link 
+  ## Demo Video  
   https://watch.screencastify.com/v/4z7tCa9BNrdLKsEZQYXs
