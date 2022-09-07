@@ -1,5 +1,5 @@
-[![License: AGPLv3}](https://img.shields.io/static/v1?label=License&message=AGPLv3&color=blue)](https://choosealicense.com/licenses/agpl-3.0/)
-  # g            
+[![License: Apache}](https://img.shields.io/static/v1?label=License&message=Apache&color=blue)](https://choosealicense.com/licenses/apache-2.0/)
+  # Generate Readme            
   ---
   ## Table of Contents
   - [Description](#description)
@@ -11,25 +11,25 @@
   - [Questions](#questions)  
   
   ## Description 
-      d 
+      Create a high-quality, professional README.md file based on user responses 
   ## Installation 
-      r  
+      Clone this repository to a new folder. Type 'npm i' to create the needed node_modules folder and files  
   ## Usage 
-      s 
+      Type 'node index.js' in the terminal and respond to the prompts 
   ## License 
       
-  Licensed under the [GNU AGPL](https://choosealicense.com/licenses/agpl-3.0/) license;
+  Licensed under the [Apache](https://choosealicense.com/licenses/apache-2.0/) license;
   
   Copyright © 2022. All rights reserved.
   ## Tests 
-      e
+      None
   ## Contributing 
-      g 
+      Push suggested changes to a new branch on gitHub for review, or contact me through the links below 
   
   ## Questions 
   - ### email 
-    <a href="mailTo: a?subject=Hello!" alt="" >a</a> 
+    <a href="mailTo: bp4924@gmail.com?subject=Hello!" alt="" >bp4924@gmail.com</a> 
   - ### GitHub 
-    [f](https://github.com/f)  
+    [bp4924](https://github.com/bp4924)  
   - ### LinkedIn 
-    [h](https://linkedin.com/in/h)
+    [berniepetters](https://linkedin.com/in/berniepetters)
