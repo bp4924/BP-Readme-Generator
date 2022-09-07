@@ -1,5 +1,5 @@
 [![License: Unlicense}](https://img.shields.io/static/v1?label=License&message=Unlicense&color=orange)](https://choosealicense.com/licenses/unlicense/)
-  # video            
+  # Generate Readme            
   ---
   ## Table of Contents
   - [Description](#description)
@@ -11,28 +11,28 @@
   - [Questions](#questions)  
   
   ## Description 
-      d 
+      Create a high-quality, professional README.md file based on user responses 
   ## Installation 
-      s  
+      Clone this repository to a new folder. Type 'npm i' to create the needed ‘node_modules’ folder and files  
   ## Usage 
-      g 
+      Type ‘node index.js’ in the terminal and respond to the prompts 
   ## License 
         
   Licensed under the [Unlicense](https://choosealicense.com/licenses/unlicense/) license;
   
   Copyright © 2022. All rights reserved.
   ## Tests 
-      n
+      None
   ## Contributing 
-      d 
+      Push suggested changes to a new branch on gitHub for review, or contact me through the links below 
   
   ## Questions 
   - ### email 
-    <a href="mailTo: d?subject=Hello!" alt="" >d</a> 
+    <a href="mailTo: bp4924@gmail.com?subject=Hello!" alt="" >bp4924@gmail.com</a> 
   - ### GitHub 
-    [a](https://github.com/a)  
+    [bp4924](https://github.com/bp4924)  
   - ### LinkedIn 
-    [d](https://linkedin.com/in/d)
+    [berniepetters](https://linkedin.com/in/berniepetters)
 
   ## Video link 
-    https://watch.screencastify.com/v/4z7tCa9BNrdLKsEZQYXs
+  https://watch.screencastify.com/v/4z7tCa9BNrdLKsEZQYXs

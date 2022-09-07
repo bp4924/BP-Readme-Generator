@@ -106,6 +106,7 @@ function generateMarkdown(data) {
   const emailLink = renderEmailLink(data.email);
   const githubLink = renderGithubLink(data.github);
   const linkedInLink = renderLinkedInLink(data.linkedIn);
+  const videoLink = data.videoDemo;
 
   const readMeText = `${licenseBadge}
   # ${data.title}            
@@ -141,7 +142,7 @@ function generateMarkdown(data) {
     ${linkedInLink}
 
   ## Video link 
-    ${data.videoDemo}`;
+  ${videoLink}`;
   return readMeText;
 }
 
