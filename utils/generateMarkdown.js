@@ -1,8 +1,8 @@
 const urlTag = {};
 
 // license badge
-function renderLicenseBadge(badge, licenseLink) {
-  const licenseBadge = `[![License: ${badge}}](https://img.shields.io/static/v1?label=License&message=${badge}&color=blue)](${licenseLink})`;
+function renderLicenseBadge(badge, strength, licenseLink) {
+  const licenseBadge = `[![License: ${badge}}](https://img.shields.io/static/v1?label=License&message=${badge}&color=${strength})](${licenseLink})`;
 
   return licenseBadge;
 }
@@ -16,49 +16,59 @@ function renderLicenseLink(license) {
       urlTag.license = license;
       urlTag.link = "mit";
       urlTag.badge = "MIT";
+      urlTag.strength = "yellow";
       break;
     case "GNU AGPL":
       urlTag.license = license;
       urlTag.link = "agpl-3.0";
       urlTag.badge = "AGPLv3";
+      urlTag.strength = "brightgreen";
       break;
     case "GNU GPL":
       urlTag.license = license;
       urlTag.link = "gpl-3.0";
       urlTag.badge = "GPLv3";
+      urlTag.strength = "green";
       break;
     case "GNU LGPL":
       urlTag.license = license;
       urlTag.link = "lgpl-3.0";
       urlTag.badge = "LGPLv3";
+      urlTag.strength = "yellowgreen";
       break;
     case "Apache":
       urlTag.license = license;
       urlTag.link = "apache-2.0";
       urlTag.badge = "Apache";
+      urlTag.strength = "yellow";
       break;
     case "Mozilla":
       urlTag.license = license;
       urlTag.link = "mpl-2.0";
       urlTag.badge = "Mozilla";
+      urlTag.strength = "yellow";
       break;
     case "Boost":
       urlTag.license = license;
       urlTag.link = "bsl-1.0";
       urlTag.badge = "Boost";
+      urlTag.strength = "yellow";
       break;
     case "Unlicense":
       urlTag.license = license;
       urlTag.link = "unlicense";
       urlTag.badge = "Unlicense";
+      urlTag.strength = "orange";
       break;
     default:
       urlTag.license = license;
       urlTag.link = "";
       urlTag.badge = "";
+      urlTag.strength = "red";
   }
 
   const licenseURL = `https://choosealicense.com/licenses/${urlTag.link}/`;
+
   return licenseURL;
 }
 
@@ -91,7 +101,11 @@ function renderLinkedInLink(linkedIn) {
 // generate markdown for README
 function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
-  const licenseBadge = renderLicenseBadge(urlTag.badge, licenseLink);
+  const licenseBadge = renderLicenseBadge(
+    urlTag.badge,
+    urlTag.strength,
+    licenseLink
+  );
   const licenseSection = renderLicenseSection(data.license, licenseLink);
 
   const emailLink = renderEmailLink(data.email);
@@ -117,7 +131,7 @@ function generateMarkdown(data) {
   ## Usage 
       ${data.usage} 
   ## License 
-    ${licenseSection}
+      ${licenseSection}
   ## Tests 
       ${data.tests}
   ## Contributing 
