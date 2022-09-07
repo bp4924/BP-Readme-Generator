@@ -1,4 +1,4 @@
-[![License: Unlicense}](https://img.shields.io/static/v1?label=License&message=Unlicense&color=orange)](https://choosealicense.com/licenses/unlicense/)
+[![License: Mozilla}](https://img.shields.io/static/v1?label=License&message=Mozilla&color=yellow)](https://choosealicense.com/licenses/mpl-2.0/)
   # Generate Readme            
   ---
   ## Table of Contents
@@ -13,12 +13,12 @@
   ## Description 
       Create a high-quality, professional README.md file based on user responses 
   ## Installation 
-      Clone this repository to a new folder. Type 'npm i' to create the needed ‘node_modules’ folder and files  
+      Clone this repository to a new folder. Type 'npm i' to create the needed ‘node_modules’ folder and file  
   ## Usage 
       Type ‘node index.js’ in the terminal and respond to the prompts 
   ## License 
         
-  Licensed under the [Unlicense](https://choosealicense.com/licenses/unlicense/) license;
+  Licensed under the [Mozilla](https://choosealicense.com/licenses/mpl-2.0/) license;
   
   Copyright © 2022. All rights reserved.
   ## Tests 
