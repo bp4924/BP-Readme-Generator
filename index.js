@@ -2,7 +2,7 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
-// terminal prompts
+// user prompts in terminal
 const questions = [
   {
     type: "input",
@@ -12,7 +12,7 @@ const questions = [
   {
     type: "input",
     name: "discription",
-    message: "Project Description:",
+    message: "Project Description: What does it do, and why?",
   },
   {
     type: "input",
@@ -22,7 +22,7 @@ const questions = [
   {
     type: "input",
     name: "usage",
-    message: "Usage:",
+    message: "Usage: How to start and use this project",
   },
   {
     type: "list",
@@ -42,12 +42,12 @@ const questions = [
   {
     type: "input",
     name: "contributing",
-    message: "Contributing:",
+    message: "How to contribute to the project:",
   },
   {
     type: "input",
     name: "tests",
-    message: "Tests:",
+    message: "Tests used:",
   },
   {
     type: "input",
@@ -64,24 +64,21 @@ const questions = [
     name: "linkedIn",
     message: "Enter your LinkedIn Username",
   },
+  {
+    type: "input",
+    name: "videoDemo",
+    message: "Paste a link to your demo video",
+  },
 ];
 
 // write README file
 function writeToFile(fileName, answers) {
-  console.log(answers);
   fs.writeFile(fileName, answers, (err) =>
     err ? console.log(err) : console.log("Successfully created README.md!")
   );
 }
 
-// TODO: Create a function to initialize app
-//function init() {
-//  console.log("init function");
-//}
-
-// Function call to initialize app
-//init();
-
+// prompt user input and pass to generateMarkdown
 inquirer.prompt(questions).then((answers) => {
   const fileName = "README.md";
   const readmePageContent = generateMarkdown(answers);

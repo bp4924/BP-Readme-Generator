@@ -1,74 +1,71 @@
-const urlTag = {};
+const licenseID = {};
 
-// license badge
+// license functions
+// badge
 function renderLicenseBadge(badge, strength, licenseLink) {
   const licenseBadge = `[![License: ${badge}}](https://img.shields.io/static/v1?label=License&message=${badge}&color=${strength})](${licenseLink})`;
-
   return licenseBadge;
 }
 
-// license functions
+// assign values to licenseID object
 function renderLicenseLink(license) {
-  console.log(license, " link");
-
   switch (license) {
     case "MIT":
-      urlTag.license = license;
-      urlTag.link = "mit";
-      urlTag.badge = "MIT";
-      urlTag.strength = "yellow";
+      licenseID.license = license;
+      licenseID.link = "mit";
+      licenseID.badge = "MIT";
+      licenseID.strength = "yellow";
       break;
     case "GNU AGPL":
-      urlTag.license = license;
-      urlTag.link = "agpl-3.0";
-      urlTag.badge = "AGPLv3";
-      urlTag.strength = "brightgreen";
+      licenseID.license = license;
+      licenseID.link = "agpl-3.0";
+      licenseID.badge = "AGPLv3";
+      licenseID.strength = "brightgreen";
       break;
     case "GNU GPL":
-      urlTag.license = license;
-      urlTag.link = "gpl-3.0";
-      urlTag.badge = "GPLv3";
-      urlTag.strength = "green";
+      licenseID.license = license;
+      licenseID.link = "gpl-3.0";
+      licenseID.badge = "GPLv3";
+      licenseID.strength = "green";
       break;
     case "GNU LGPL":
-      urlTag.license = license;
-      urlTag.link = "lgpl-3.0";
-      urlTag.badge = "LGPLv3";
-      urlTag.strength = "yellowgreen";
+      licenseID.license = license;
+      licenseID.link = "lgpl-3.0";
+      licenseID.badge = "LGPLv3";
+      licenseID.strength = "yellowgreen";
       break;
     case "Apache":
-      urlTag.license = license;
-      urlTag.link = "apache-2.0";
-      urlTag.badge = "Apache";
-      urlTag.strength = "yellow";
+      licenseID.license = license;
+      licenseID.link = "apache-2.0";
+      licenseID.badge = "Apache";
+      licenseID.strength = "yellow";
       break;
     case "Mozilla":
-      urlTag.license = license;
-      urlTag.link = "mpl-2.0";
-      urlTag.badge = "Mozilla";
-      urlTag.strength = "yellow";
+      licenseID.license = license;
+      licenseID.link = "mpl-2.0";
+      licenseID.badge = "Mozilla";
+      licenseID.strength = "yellow";
       break;
     case "Boost":
-      urlTag.license = license;
-      urlTag.link = "bsl-1.0";
-      urlTag.badge = "Boost";
-      urlTag.strength = "yellow";
+      licenseID.license = license;
+      licenseID.link = "bsl-1.0";
+      licenseID.badge = "Boost";
+      licenseID.strength = "yellow";
       break;
     case "Unlicense":
-      urlTag.license = license;
-      urlTag.link = "unlicense";
-      urlTag.badge = "Unlicense";
-      urlTag.strength = "orange";
+      licenseID.license = license;
+      licenseID.link = "unlicense";
+      licenseID.badge = "Unlicense";
+      licenseID.strength = "orange";
       break;
     default:
-      urlTag.license = license;
-      urlTag.link = "";
-      urlTag.badge = "";
-      urlTag.strength = "red";
+      licenseID.license = license;
+      licenseID.link = "";
+      licenseID.badge = "";
+      licenseID.strength = "red";
   }
 
-  const licenseURL = `https://choosealicense.com/licenses/${urlTag.link}/`;
-
+  const licenseURL = `https://choosealicense.com/licenses/${licenseID.link}/`;
   return licenseURL;
 }
 
@@ -88,13 +85,11 @@ function renderEmailLink(email) {
 
 function renderGithubLink(github) {
   const githubLink = `[${github}](https://github.com/${github})`;
-  console.log(githubLink);
   return githubLink;
 }
 
 function renderLinkedInLink(linkedIn) {
   const linkedInLink = `[${linkedIn}](https://linkedin.com/in/${linkedIn})`;
-  console.log(linkedInLink);
   return linkedInLink;
 }
 
@@ -102,8 +97,8 @@ function renderLinkedInLink(linkedIn) {
 function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
   const licenseBadge = renderLicenseBadge(
-    urlTag.badge,
-    urlTag.strength,
+    licenseID.badge,
+    licenseID.strength,
     licenseLink
   );
   const licenseSection = renderLicenseSection(data.license, licenseLink);
@@ -111,6 +106,7 @@ function generateMarkdown(data) {
   const emailLink = renderEmailLink(data.email);
   const githubLink = renderGithubLink(data.github);
   const linkedInLink = renderLinkedInLink(data.linkedIn);
+  const videoLink = data.videoDemo;
 
   const readMeText = `${licenseBadge}
   # ${data.title}            
@@ -143,7 +139,10 @@ function generateMarkdown(data) {
   - ### GitHub 
     ${githubLink}  
   - ### LinkedIn 
-    ${linkedInLink}`;
+    ${linkedInLink}
+
+  ## Demo Video  
+  ${videoLink}`;
   return readMeText;
 }
 
