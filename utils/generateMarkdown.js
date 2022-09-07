@@ -85,13 +85,13 @@ function renderLinkedInLink(linkedIn) {
   return linkedInLink;
 }
 
-function renderTableOfContents(sections) {
-  for (let i = 0; i < sections.length; i++) {
-    section += ` - [${sections[i]}](#${sections[i].toLowerCase()})`;
-    console.log(section);
-  }
-  return section;
-}
+// function renderTableOfContents(sections) {
+//   for (let i = 0; i < sections.length; i++) {
+//     section += ` - [${sections[i]}](#${sections[i].toLowerCase()})`;
+//     console.log(section);
+//   }
+//   return section;
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -102,12 +102,19 @@ function generateMarkdown(data) {
   const emailLink = renderEmailLink(data.email);
   const githubLink = renderGithubLink(data.github);
   const linkedInLink = renderLinkedInLink(data.linkedIn);
-  const tableOfContentsList = renderTableOfContents(sections);
+  //  const tableOfContentsList = renderTableOfContents(sections);
 
   const readMeText = `${licenseBadge}
   # ${data.title}            
   ---
   ## Table of Contents
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [License](#license)
+  - [Tests](#tests)
+  - [Contributing](#contributing)
+  - [Questions](#questions)  
   
   ======
 

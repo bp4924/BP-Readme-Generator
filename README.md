@@ -1,9 +1,7 @@
-[<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="20" role="img" aria-label="License: GNU AGPL"><title>License: GNU AGPL</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="104" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="53" height="20" fill="#4c1"/><rect width="104" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="785" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="470">GNU AGPL</text><text x="785" y="140" transform="scale(.1)" fill="#fff" textLength="470">GNU AGPL</text></g></svg>](https://choosealicense.com/licenses/agpl-3.0/)
+[<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="20" role="img" aria-label="License: Apache"><title>License: Apache</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="104" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="53" height="20" fill="#4c1"/><rect width="104" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="785" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="470">Apache</text><text x="785" y="140" transform="scale(.1)" fill="#fff" textLength="470">Apache</text></g></svg>](https://choosealicense.com/licenses/apache-2.0/)
   # Generate Readme            
   ---
   ## Table of Contents
-  - [Generate Readme](#title)
-  - [Table of Contents](#table-of-contents)
   - [Description](#description)
   - [Installation](#installation)
   - [Usage](#usage)
@@ -23,13 +21,13 @@
   ## License 
     
   
-  Licensed under the [GNU AGPL](https://choosealicense.com/licenses/agpl-3.0/) license;
+  Licensed under the [Apache](https://choosealicense.com/licenses/apache-2.0/) license;
   
   Copyright © 2022. All rights reserved.
   ## Tests 
       None
   ## Contributing 
-      Push suggested changes to gitHub or contact me through one of the links below 
+      Push suggested changes to a new branch on gitHub for review, or contact me through the links below 
   
   ## Questions 
   - ### email 
