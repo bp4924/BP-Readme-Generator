@@ -87,8 +87,7 @@ function renderLinkedInLink(linkedIn) {
 
 function renderTableOfContents(sections) {
   for (let i = 0; i < sections.length; i++) {
-    section += sections[i];
-    //    tableOfContents = tableOfContents.join(sections[i]);
+    section += ` - [${sections[i]}](#${sections[i].toLowerCase()})`;
     console.log(section);
   }
   return section;
@@ -105,12 +104,13 @@ function generateMarkdown(data) {
   const linkedInLink = renderLinkedInLink(data.linkedIn);
   const tableOfContentsList = renderTableOfContents(sections);
 
-  const readMeText = `# ${data.title}            
-  ${licenseBadge}
+  const readMeText = `${licenseBadge}
+  # ${data.title}            
   ---
   ## Table of Contents
-  - ###${tableOfContentsList}
+  
   ======
+
   ## Description 
       ${data.discription} 
   ## Installation 
