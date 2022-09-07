@@ -32,7 +32,7 @@ const questions = [
       "GNU LGPL",
       "Apache",
       "Mozilla",
-      "MIT License",
+      "MIT",
       "Boost",
       "Unlicense",
     ],
