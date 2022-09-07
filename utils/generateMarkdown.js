@@ -1,48 +1,70 @@
-let urlTag;
+const urlTag = {};
 
 // license badge
-function renderLicenseBadge(urlTag, license, licenseLink) {
-  const urlTagToCap = urlTag.toUpperCase();
-  console.log(urlTagToCap);
-  const licenseBadge = `[![License: ${urlTagToCap}}](https://img.shields.io/badge/License-${license}-blue.svg)](${licenseLink})`;
+function renderLicenseBadge(badge, licenseLink) {
+  //  const urlTagToCap = urlTag.toUpperCase();
+  //  console.log(urlTagToCap);
+  const licenseBadge = `[![License: ${badge}}](https://img.shields.io/static/v1?label=License&message=${badge}&color=blue)](${licenseLink})`;
+
+  // const licenseBadge = `[![License: ${urlTagToCap}}](https://img.shields.io/badge/License-${license}-blue.svg)](${licenseLink})`;
+
+  //img.shields.io/static/v1?label=<LABEL>&message=<MESSAGE>&color=<COLOR>
+
   // const licenseBadge = `[<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104" height="20" role="img" aria-label="License: ${license}"><title>License: ${license}</title><linearGradient id="s" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="r"><rect width="104" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#r)"><rect width="51" height="20" fill="#555"/><rect x="51" width="53" height="20" fill="#4c1"/><rect width="104" height="20" fill="url(#s)"/></g><g fill="#fff" text-anchor="middle" font-family="Verdana,Geneva,DejaVu Sans,sans-serif" text-rendering="geometricPrecision" font-size="110"><text aria-hidden="true" x="265" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="410">License</text><text x="265" y="140" transform="scale(.1)" fill="#fff" textLength="410">License</text><text aria-hidden="true" x="785" y="150" fill="#010101" fill-opacity=".3" transform="scale(.1)" textLength="470">${license}</text><text x="785" y="140" transform="scale(.1)" fill="#fff" textLength="470">${license}</text></g></svg>](${licenseLink})`;
-  return licenseBadge;
+  https: return licenseBadge;
 }
 
 // license functions
 function renderLicenseLink(license) {
   console.log(license, " link");
-  //  let urlTag;
 
   switch (license) {
     case "MIT":
-      urlTag = "mit";
+      urlTag.license = license;
+      urlTag.link = "mit";
+      urlTag.badge = "MIT";
       break;
     case "GNU AGPL":
-      urlTag = "agpl-3.0";
+      urlTag.license = license;
+      urlTag.link = "agpl-3.0";
+      urlTag.badge = "AGPLv3";
       break;
     case "GNU GPL":
-      urlTag = "gpl-3.0";
+      urlTag.license = license;
+      urlTag.link = "gpl-3.0";
+      urlTag.badge = "GPLv3";
       break;
     case "GNU LGPL":
-      urlTag = "lgpl-3.0";
+      urlTag.license = license;
+      urlTag.link = "lgpl-3.0";
+      urlTag.badge = "LGPLv3";
       break;
     case "Apache":
-      urlTag = "apache-2.0";
+      urlTag.license = license;
+      urlTag.link = "apache-2.0";
+      urlTag.badge = "Apachev2";
       break;
     case "Mozilla":
-      urlTag = "mpl-2.0";
+      urlTag.license = license;
+      urlTag.link = "mpl-2.0";
+      urlTag.badge = "Mozilla";
       break;
     case "Boost":
-      urlTag = "bsl-1.0";
+      urlTag.license = license;
+      urlTag.link = "bsl-1.0";
+      urlTag.badge = "Boost";
       break;
     case "Unlicense":
-      urlTag = "unlicense";
+      urlTag.license = license;
+      urlTag.link = "unlicense";
+      urlTag.badge = "Unlicense";
     default:
-      urlTag = "";
+      urlTag.license = license;
+      urlTag.link = "";
+      urlTag.badge = "";
   }
 
-  const licenseURL = `https://choosealicense.com/licenses/${urlTag}/`;
+  const licenseURL = `https://choosealicense.com/licenses/${urlTag.link}/`;
   return licenseURL;
 }
 
@@ -75,7 +97,7 @@ function renderLinkedInLink(linkedIn) {
 // generate markdown for README
 function generateMarkdown(data) {
   const licenseLink = renderLicenseLink(data.license);
-  const licenseBadge = renderLicenseBadge(urlTag, licenseLink);
+  const licenseBadge = renderLicenseBadge(urlTag.badge, licenseLink);
   const licenseSection = renderLicenseSection(data.license, licenseLink);
 
   const emailLink = renderEmailLink(data.email);
