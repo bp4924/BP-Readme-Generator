@@ -1,5 +1,5 @@
-[![License: Unlicense}](https://img.shields.io/static/v1?label=License&message=Unlicense&color=orange)](https://choosealicense.com/licenses/unlicense/)
-  # unlicense            
+[![License: Apache}](https://img.shields.io/static/v1?label=License&message=Apache&color=yellow)](https://choosealicense.com/licenses/apache-2.0/)
+  # Generate Readme            
   ---
   ## Table of Contents
   - [Description](#description)
@@ -11,25 +11,25 @@
   - [Questions](#questions)  
   
   ## Description 
-      d 
+      Create a high-quality, professional README.md file based on user responses 
   ## Installation 
-      a  
+      Clone this repository to a new folder. Type 'npm i' to create the needed node_modules folder and files  
   ## Usage 
-      g 
+      Type 'node index.js' in the terminal and respond to the prompts 
   ## License 
         
-  Licensed under the [Unlicense](https://choosealicense.com/licenses/unlicense/) license;
+  Licensed under the [Apache](https://choosealicense.com/licenses/apache-2.0/) license;
   
   Copyright © 2022. All rights reserved.
   ## Tests 
-      e
+      None
   ## Contributing 
-      d 
+      Push suggested changes to a new branch on gitHub for review, or contact me through the links below 
   
   ## Questions 
   - ### email 
-    <a href="mailTo: a?subject=Hello!" alt="" >a</a> 
+    <a href="mailTo: bp4924@gmail.com?subject=Hello!" alt="" >bp4924@gmail.com</a> 
   - ### GitHub 
-    [d](https://github.com/d)  
+    [bp4924](https://github.com/bp4924)  
   - ### LinkedIn 
-    [g](https://linkedin.com/in/g)
+    [berniepetters](https://linkedin.com/in/berniepetters)
